@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project7</title>
+
+    <style>
+        :root {
+            --yellow: #FDBD03;
+            --whitebg: #E5EEFF;
+            --pcolor: #020253;
+            --label: #2C2C2C;
+            --btn: black;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /*   max-width: 1920px;
+            max-width: 1265px; */
+
+        .fullPage {
+            text-align: end;
+            width: 100vw;
+        }
+
+        .card {
+            position: absolute;
+            margin-top: 17.8656126vh;
+            margin-left: 9.42708333vw;
+        }
+
+        .card h1 {
+            font: normal normal 900 66px/97px Heebo;
+            color: var(--yellow);
+        }
+
+        .card p {
+            margin-top: 1.185770750988142vh;
+            font: normal normal normal 20px/29px Heebo;
+            color: var(--pcolor);
+        }
+
+        #nameEmail {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .name input,
+        .email input {
+            height: 3.952569169960474vh;
+            width: 21.74479166666667vw;
+        }
+
+        .name input {
+            margin-left: 1.015625vw;
+        }
+
+        .about textarea {
+            width: 44.50520833333333vw;
+            height: 11.26561264822134vh;
+        }
+
+        .boxInput {
+            margin-top: 3.00395256916996vh;
+            border: 1px solid black;
+        }
+
+        .name input,
+        .email input,
+        .about textarea {
+            border: none;
+            border-bottom: 0.37037037vh solid var(--yellow);
+            background-color: var(--whitebg);
+        }
+
+        .name label,
+        .email label,
+        .about label {
+            text-align: right;
+            font: normal normal bold 16px/24px Heebo;
+            font-weight: 900;
+            color: var(--label);
+        }
+
+        input[type=submit] {
+            width: 8.645833333333333vw;
+            height: 3.952569169960474vh;
+            margin-top: 5.809486166007905vh;
+            background-color: var(--yellow);
+            color: var(--btn);
+            font-size: 3.54vw 2.96vh;
+            cursor: pointer;
+            font-weight: 900;
+            letter-spacing: 0.33px;
+            border: none;
+        }
+
+        .phoneImg img {
+            margin-top: 10.90909090909091vh;
+            margin-right: 8.645833333333333vw;
+        }
+
+        .containerIcons {
+            display: flex;
+            gap: 1.979166666666667vw;
+            width: 25.72916666666667vw;
+            height: 7.509881422924901vh;
+            margin-right: 1371px;
+        }
+
+        .bgicons {
+            width: 4.947916666666667vw;
+            height: 7.509881422924901vh;
+            background-color: var(--yellow);
+            border-radius: 50%;
+
+        }
+
+        .bgicons img {
+            margin-top: 1.969230769230769vh;
+            margin-bottom: 1.969230769230769vh;
+            margin-right: 1.666666666666667vw;
+            margin-left: 1.666666666666667vw;
+        }
+
+        .topyellowline {
+            position: absolute;
+            border: 0px solid var(--yellow);
+            background-color: var(--yellow);
+            width: 22.60416666666667vw;
+            height: 1.422924901185771vh;
+            margin-top: 0;
+            margin-left: 77.39583333333333vw;
+        }
+
+        .bottumyellowline {
+            position: absolute;
+            border: 0px solid var(--yellow);
+            background-color: var(--yellow);
+            width: 22.60416666666667vw;
+            height: 1.422924901185771vh;
+            margin-top: 98.57707509881423vh;
+            margin-right: 69.72332015810277vh;
+        }
+
+        .picWasapp {
+            position: absolute;
+            margin-top: 4.980237154150198vh;
+            margin-left: 3.385416666666667vw;
+            background: var(--yellow);
+            border: 0 solid var(--yellow);
+            border-radius: 50%;
+            width: 4.947916666666667vw;
+            height: 7.509881422924901vh;
+        }
+
+        .picWasapp img {
+            margin-top: 1.58102766798419vh;
+            margin-bottom: 1.58102766798419vh;
+            margin-right: 1.145833333333333vw;
+            margin-left: 1.145833333333333vw;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="topyellowline"></div>
+    <div class="bottumyellowline"></div>
+    <div class="picWasapp"><img src="img/iconwhatsapp.png" alt=""></div>
+
+
+    <div class="fullPage">
+
+        <div class="card">
+
+            <h1>ייעוץ חינם</h1>
+            <p>לקבלת ייעוץ חינם, מוזמנים להשאיר פרטים ומומחה יחזור אליכם עם מענה.</p>
+
+
+            <div class="form">
+
+                <div id="nameEmail">
+
+                    <div class="name">
+                        <label for="">שם מלא</label><br>
+                        <input type="text">
+                    </div>
+
+                    <div class="email">
+                        <label for="">דוא״ל</label><br>
+                        <input type="text">
+                    </div>
+
+                </div>
+
+                <div class="about">
+                    <label for="">שם מלא</label><br>
+                    <textarea name=""></textarea>
+                </div>
+
+
+                <div class="btn">
+                    <input type="submit" value="שליחה">
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="phoneImg">
+            <img src="img/phonepic.png" alt="" srcset="">
+        </div>
+
+        <div class="containerIcons">
+            <div class="faceBoockbg bgicons"><img src="img/faceBoock.png" alt="Facebook"></div>
+            <div class="instagrambg bgicons"><img src="img/email.png" alt="instagram"></div>
+            <div class="linkIdbg bgicons"><img src="img/linkIdsmall.png" alt="linkId"></div>
+            <div class="phonebg bgicons"><img src="img/phone.png" alt="Phone"></div>
+        </div>
+
+</body>
+
+</html>

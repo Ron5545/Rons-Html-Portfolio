@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --white: #FFFFFF;
+            --bglight: #EBFEFF;
+            --black: #000000;
+            --header: #1AE0EC;
+            --border: #00000066;
+            --headerbg: #13E8F163;
+            --text: #3A3A3A;
+        }
+
+        .bd-grid {
+            max-width: 53.33333333333333vw;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-column-gap: 2rem;
+            width: calc(100% - 2rem);
+            margin-left: 23.33333333333333vw;
+            margin-right: 23.33333333333333vw;
+            justify-content: center;
+            align-content: center;
+        }
+
+
+        /* Header */
+
+        .header {
+            width: 100vw;
+            height: 6.481481481481481vh;
+            position: fixed;
+            background-color: var(--bglight);
+            align-items: center;
+            z-index: 100;
+        }
+
+        .nav {
+            opacity: 1;
+        }
+
+        .navMenu {
+            color: var(--white)
+        }
+
+        #nameLogo {
+            margin-left: 0.8854166666666667vw;
+        }
+
+        #picLogo {
+            margin-top: 0.5753739930955121vh;
+        }
+
+        .liList {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            font: normal normal 900 25px/37px Heebo;
+            font-weight: 900;
+            letter-spacing: 0px;
+            color: var(--header);
+            opacity: 1;
+            margin-top: 3.452243958573072vh;
+            margin-left: 0.78125vw;
+            margin-right: 0.78125vw;
+        }
+
+
+        .nav ul {
+            height: 6.481481481481481vh;
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+            list-style: none;
+        }
+
+        .navLogo {
+            display: flex;
+            align-items: center;
+        }
+
+
+
+        #path {
+            width: 100vw;
+            height: 26.4994246260069vh;
+            background: var(--headerbg) 0% 0% no-repeat padding-box;
+            text-align: center;
+        }
+
+        #path h1 {
+            font: normal normal 900 80px/118px Heebo;
+            letter-spacing: 0px;
+            color: #3A3A3A;
+            opacity: 1;
+            padding-top: 5.811277330264672vh;
+        }
+
+        #path p {
+            font: normal normal medium 20px/30px Heebo;
+            letter-spacing: 0px;
+            color: #3A3A3A;
+            opacity: 1;
+            font-weight: 900;
+        }
+
+        #btn {
+            display: flex;
+            justify-content: center;
+            gap: 3.125vw;
+            margin-top: 1.812428078250863vh;
+        }
+
+        #containerTech {
+            color: var(--white);
+            display: block;
+            width: 465px;
+            height: 100px;
+            margin: 0 auto;
+
+        }
+
+
+        .containerProject {
+            background: var(--bglight);
+            width: 100vw;
+            height: 60vh;
+        }
+
+
+        .containerProject img {
+            margin-top: 6.444188722669735vh;
+            margin-left: 19.01041666666667vw;
+            margin-right: 19.01041666666667vw;
+            margin-bottom: 10.75949367088608vh;
+            width: 63.75vw;
+            height: 46.2962962962963vh;
+        }
+
+        .buttomNavBar {
+            display: flex;
+            justify-content: space-between;
+            background: var(--black);
+            height: 2.934407364787112vh;
+        }
+
+        .buttomNavBar p {
+            color: var(--header);
+            margin-top: 0.5vh;
+        }
+
+        .topBar {
+            height: 0.25vh;
+            width: 100vw;
+            background-color: var(--header);
+        }
+
+        .buttomBar {
+            height: 0.25vh;
+            width: 100vw;
+            background-color: var(--header);
+        }
+
+        @media (max-width: 960px) {
+
+            #path h1 {
+                font-size: 50px;
+            }
+
+            #btn div a {
+                font-size: medium;
+            }
+
+            .bd-grid {
+                width: 100vw;
+                display: grid;
+                grid-template-columns: 100%;
+                grid-column-gap: 2rem;
+                justify-content: center;
+                align-content: center;
+            }
+
+            .nav a {
+                font-size: smaller;
+            }
+
+            #nameLogo {
+                width: 100px;
+            }
+
+            #picLogo {
+                visibility: hidden;
+            }
+
+            .bd-grid {
+                justify-items: center;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="topBar"></div>
+
+    <header class="header">
+
+        <nav class="nav bd-grid">
+
+            <ul class="navList ">
+
+                <div class="navLogo">
+                    <div id="nameLogo">
+                        <img src="./image/MyNameLogoBlack.png" alt="" srcset="">
+                    </div>
+
+                    <div id="picLogo">
+                        <a href="">
+                            <img src="./image/profile-image.png" alt="" srcset="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="liList">
+                    <li class="navItem"><a href="/index.html">Home</a></li>
+                    <li class="navItem"><a href="#path">Title</a></li>
+                    <li class="navItem"><a href="#tech">Skills</a></li>
+                    <li class="navItem"><a href="#Project">Project</a></li>
+                </div>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section id="path">
+
+        <div>
+            <h1>כאן ועכשיו</h1>
+            <p>רצינו להזמין אתכם להנות משלל מתנות</p>
+        </div>
+
+        <div id="btn">
+            <div><a href="../ProjectNo1/ProjectNo1.html" target="_blank">לצפייה בפרויקט</a></div>
+            <div><a href="./ProjectNo1.rar" target="_blank" download>להורדת הפרויקט</a>
+            </div>
+        </div>
+
+    </section>
+
+    <div id="tech">
+        <div id="containerTech">
+            <img src="image/img-Bootstrap.png" alt="" width="100" height="100"><img src="image/img-CSS.png" alt=""
+                width="100" height="100"><img src="image/img-HTML.png" alt="" width="100" height="100"><img
+                src="image/img-SASS.png" alt="" width="100" height="100">
+        </div>
+    </div>
+
+    <div class="containerProject" id="project">
+
+        <img src="image/project1.png" alt="" width="1189" height="718">
+
+    </div>
+
+    <div class="buttomNavBar">
+        <p>כל הזכויות שמורות</p>
+        <p>ron shulkin</p>
+    </div>
+
+
+    <div class="buttomBar"></div>
+
+</body>
+
+</html>

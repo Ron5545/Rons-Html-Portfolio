@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Rubik+Bubbles&family=Satisfy&family=Shadows+Into+Light&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Shadows Into Light', cursive;
+    min-height: 100vh;
+}
+
+:root {
+    --todo-input: 300px;
+    --todo-button-width: 50px;
+    --todo-height: 36px;
+}
+
+:root {
+    --bgc: ;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 1, 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.to-do-input input {
+
+    max-width: var(--todo-input);
+    height: var(--todo-height);
+    border: none;
+    width: 100%;
+    background-color: grey;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+}
+
+
+
+
+.to-do-input button {
+    background-color: grey;
+    width: var(--todo-button-width);
+    height: var(--todo-height);
+    position: absolute;
+    border: none;
+    position: absolute;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+.item {
+    gap: 15px;
+}
+
+.input-controller {
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.input-controller textarea {
+    outline: none;
+    border: none;
+    resize: none;
+    transition: all 0.30s ease-in-out;
+    display: absolute;
+    background-color: grey;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: var(--todo-input);
+}
+
+/* textarea:focus {}*/
+
+.edit-controller {
+    position: absolute;
+    border: none;
+    position: relative;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: var(--todo-button-width);
+    height: var(--todo-height);
+    background-color: grey;
+}
+
+.update-controller {
+    display: none;
+}

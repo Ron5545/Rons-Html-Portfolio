@@ -1,0 +1,121 @@
+        :root {
+            --headTextColor: #FFFFFF;
+            --bgcb: #1A1A1AD4;
+            --pTextColor: #F9F9F9;
+            --btnPink: #D31C75;
+            --btnBorderColor: #00000029;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+        }
+
+        img {
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 60vh;
+        }
+
+        .bottom {
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 490px;
+        }
+
+        .card {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            top: 15vh;
+            right: 15vw;
+            width: 35em;
+            height: 44em;
+            background-color: var(--bgcb);
+            direction: rtl;
+        }
+
+        input {
+            width: 26em;
+            height: 3em;
+            font-size: 1em;
+        }
+
+        label {
+            display: block;
+            color: var(--headTextColor);
+            margin-top: 10px;
+            font: normal normal 700 16px/24px Heebo;
+        }
+
+        input[type=submit] {
+            width: 166px;
+            height: 50px;
+            margin-top: 20px;
+            background-color: var(--btnPink);
+            color: var(--headTextColor);
+            font: normal normal 700 22px/30px Heebo;
+        }
+
+        h1 {
+            color: var(--headTextColor);
+            text-align: center;
+            font: normal normal 900 36px/53px Heebo;
+            margin-top: -3em;
+        }
+
+        p {
+            color: var(--pTextColor);
+            text-align: center;
+            font: normal normal 400 20px/29px Heebo;
+            margin: 20px;
+        }
+
+        /* X-Small devices (portrait phones, less than 576px) */
+        @media (max-width: 575.98px) {
+            input {
+                width: 70vw;
+            }
+
+        }
+
+        /* Small devices (landscape phones, less than 768px)  */
+        @media (max-width: 767.98px) {
+            .container {
+                max-width: 991.98px;
+            }
+
+            .card {
+                width: 80vw;
+                height: 40.1875em;
+            }
+        }
+
+        /* Medium devices (tablets, less than 992px)  */
+        @media (max-width: 991.98px) {
+            .container {
+                max-width: 991.98px;
+            }
+
+            .card {
+                flex: none;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            p {
+                font: normal normal 200 16px/20px Heebo;
+            }
+        }

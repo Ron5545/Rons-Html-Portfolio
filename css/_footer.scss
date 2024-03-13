@@ -1,0 +1,20 @@
+/* Footer */
+
+.footerSection {
+    place-content: baseline;
+    height: 6.481481481481481vh;
+    background-color: var(--headerbg);
+}
+
+#container-footer {
+    width: 100%;
+    height: 6.481481481481481vh;
+    background-color: var(--headerbg);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+
+#container-footer>p {
+    padding: 1.1em;
+}

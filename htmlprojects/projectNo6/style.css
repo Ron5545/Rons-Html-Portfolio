@@ -1,0 +1,350 @@
+    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Rubik+Bubbles&family=Satisfy&display=swap');
+
+    /* loyaut */
+
+    body {
+        font-family: Heebo;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --main-blue: #0EE1E1;
+        --main-white: #FFFFFF;
+        --main-black: #000000;
+        --Input-bgc: #F0FFFF;
+    }
+
+    /* fontsize */
+
+    :root {
+        --header-h1: 66px;
+        --header-p: 20px;
+        --squers-h1: 30px;
+        --squers-p: 15px;
+        --Input-h1: 46px;
+        --input-p: 15px;
+        --label-textInput: 15px;
+    }
+
+
+    /* header */
+
+    .headerContainer {
+        width: 100vw;
+        height: 28.55855855855856vh;
+        background-color: var(--main-blue);
+    }
+
+    .headerLogo {
+        position: absolute;
+        margin-top: 3.828828828828829vh;
+        margin-left: 4.427083333333333vw;
+    }
+
+    .headerBox {
+        margin-right: 7.8125vw;
+        margin-top: 8.243243243243243vh;
+    }
+
+    .headerBox img {
+        height: 12.03873873873874vh;
+    }
+
+    .boxText {
+        display: flex;
+        direction: rtl;
+        flex-wrap: wrap;
+    }
+
+    .headerText {
+        justify-content: center;
+        text-align: start;
+        margin-right: 9.479166666666667vw;
+        margin-top: 10.45045045045045vh;
+
+    }
+
+    .headerText h1 {
+        text-align: right;
+        font: normal normal 900 97px Heebo;
+        font-size: var(--header-h1);
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+    }
+
+    .headerText p {
+        text-align: right;
+        font: normal normal normal Heebo;
+        font-weight: 0;
+        font-size: var(--header-p);
+        width: 787px;
+    }
+
+    /* boxSection */
+
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 23px;
+        justify-content: center;
+        margin-top: 46px;
+        margin-bottom: 70px;
+    }
+
+    .box img {
+        margin-top: 3.333333333333333vh;
+    }
+
+    .box h1 {
+        font: normal normal 900 44px Heebo;
+        font-size: var(--squers-h1);
+        letter-spacing: 0px;
+        color: #0EE1E1;
+        opacity: 1;
+    }
+
+    .box p {
+        max-width: 293px;
+        height: 56px;
+        font: normal normal normal Heebo;
+        font-size: var(--squers-p);
+        font-weight: bold;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+        margin-left: 79px;
+        margin-right: 79px;
+    }
+
+    .square {
+        text-align: center;
+        width: 450px;
+        height: 329px;
+        background-color: #F8F8F8;
+    }
+
+    .squareText {
+        margin-top: 29px;
+    }
+
+    /* mapSection */
+
+    .mapInput {
+        display: flex;
+        direction: rtl;
+    }
+
+    .mapContainer {
+        width: 56.796875vw;
+        height: 42.27477477477477vh;
+        background-color: var(--main-blue);
+    }
+
+    .mapContainer img {
+        width: 49.11458333333333vw;
+        height: 34.59459459459459vh;
+        margin-left: 73.75px;
+        margin-right: 73.75px;
+        margin-top: 3.850225225225225vh;
+    }
+
+    .inputContainer {
+        background-color: var(--Input-bgc);
+        width: 43.203125vw;
+    }
+
+    .inputItems {
+        margin-right: 10.51692708333333vw;
+        margin-top: 85px;
+    }
+
+    .input input,
+    textarea {
+        display: flex;
+        flex-direction: column;
+        gap: 2.117117117117117vh;
+    }
+
+
+    .textInput h1 {
+        font: normal normal 900 67px Heebo;
+        font-size: var(--Input-h1);
+        letter-spacing: 0px;
+        color: #090909;
+        opacity: 1;
+        font-weight: 900;
+    }
+
+    .textInput p {
+        font: normal normal normal 22px Heebo;
+        font-size: var(--input-p);
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+        width: 20.98958333333333vw;
+    }
+
+    .inputContainer label {
+        font: normal normal bold 19px Heebo;
+        font-size: var(--label-textInput);
+        letter-spacing: 0px;
+        color: #2C2C2C;
+        opacity: 1;
+    }
+
+    .inputContainer input,
+    textarea {
+        width: 22.16927083333333vw;
+        height: 2.296396396396396vh;
+        background: #E5EEFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        border-bottom: 0.1837837837837838vh solid var(--main-blue);
+    }
+
+    .inputContainer textarea {
+        height: 6.544594594594595vh;
+    }
+
+    .input button {
+        width: 22.16927083333333vw;
+        height: 2.296396396396396vh;
+        background-color: var(--main-blue);
+        color: var(--main-black);
+        font-weight: 900;
+        margin-top: 1.090540540540541vh;
+    }
+
+    /* footer */
+
+    .iconSection {
+        margin-top: 49.5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        gap: 38px;
+    }
+
+    .iconSection img {
+        margin: 34px 34px 34px 34px;
+    }
+
+    .whatsapp,
+    .facebook,
+    .phone,
+    .linkedin {
+        width: 95px;
+        height: 95px;
+        border: 1px solid var(--main-blue);
+        border-radius: 60%;
+        background-color: var(--main-blue);
+    }
+
+
+    .hr {
+        width: 100vw;
+        height: 18.53px;
+        background-color: var(--main-blue);
+        margin-top: 70.5px;
+    }
+
+    /* responsive */
+
+
+    @media (max-width: 1200px) {
+
+        :root {
+            --header-h1: 33px;
+            --header-p: 15px;
+            --squers-h1: 22px;
+            --squers-p: 15px;
+            --Input-h1: 32px;
+            --input-p: 15px;
+            --label-textInput: 12px;
+        }
+    }
+
+
+    @media (max-width: 1100px) {
+
+        .headerLogo {
+            visibility: hidden;
+        }
+
+        .headerBox {
+            margin-right: 10vw;
+            margin-top: 0;
+        }
+
+        .headerText {
+            margin: 0;
+        }
+
+        .headerText h1 {
+            margin-right: 10vw;
+        }
+
+        .headerText p {
+            margin-right: 10vw;
+            width: 70vw;
+        }
+
+        .mapInput {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .mapContainer {
+            width: 100vw;
+        }
+
+        .mapContainer img {
+            width: 75vw;
+        }
+
+        .inputContainer {
+            width: 100vw;
+        }
+
+        .textInput p {
+            width: 80vw;
+        }
+
+        .inputContainer input,
+        textarea {
+            width: 80vw;
+            height: 2vh;
+        }
+
+        .inputContainer textarea {
+            height: 12vh;
+        }
+
+        .input button {
+            width: 80vw;
+            height: 2.296396396396396vh;
+            margin-top: 1.090540540540541vh;
+        }
+
+
+
+        @media (max-width: 370px) {
+
+            :root {
+                --header-h1: 33px;
+                --header-p: 15px;
+                --squers-h1: 22px;
+                --squers-p: 15px;
+                --Input-h1: 32px;
+                --input-p: 15px;
+                --label-textInput: 12px;
+            }
+        }
+    }

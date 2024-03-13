@@ -1,0 +1,82 @@
+.projectsSection {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: var(--bg);
+}
+
+.containerJavaScriptCard,
+.containerHtmlCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    height: 250px;
+}
+
+.HtmlTitle {
+    margin-bottom: 50px;
+}
+
+.JavaScriptTitle {
+    margin-top: 250px;
+    margin-bottom: 50px;
+}
+
+.projectsSection div {
+    gap: 30px;
+}
+
+.card a img {
+    width: 300px;
+    height: 200px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    background-color: #CCCCCC;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: #D62929;
+    background-image: -webkit-linear-gradient(90deg,
+            transparent,
+            rgba(0, 0, 0, 0.4) 50%,
+            transparent,
+            transparent)
+}
+
+.containerHtmlCard::-webkit-scrollbar-track,
+.containerJavaScriptCard::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+    border-radius: 25px;
+    background-color: #CCCCCC;
+}
+
+.containerHtmlCard::-webkit-scrollbar,
+.containerJavaScriptCard::-webkit-scrollbar {
+    border-radius: 25px;
+    height: 10px;
+    background-color: #F5F5F5;
+}
+
+.containerHtmlCard::-webkit-scrollbar-thumb,
+.containerJavaScriptCard::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: #D62929;
+    background-image: -webkit-linear-gradient(90deg,
+            transparent,
+            rgba(0, 0, 0, 0.4) 50%,
+            transparent,
+            transparent)
+}

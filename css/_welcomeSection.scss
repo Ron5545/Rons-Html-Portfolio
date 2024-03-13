@@ -1,0 +1,86 @@
+/* welcome section */
+
+.welcomeSection {
+    background-color: var(--bg);
+    height: calc((100vh) - (6.4814814815vh));
+}
+
+.welcomeContainer {
+    width: var(--bgGrid--Width);
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding-top: calc((((100vh) - (6.4814814815vh)) - (var(--welcomeImg--height))) / 2);
+}
+
+.welcomeImage img {
+    position: flex;
+    width: var(--welcomeImg--width);
+    height: var(--welcomeImg--height);
+    margin-left: calc(((var(--bgGrid--Width))/2) - (var(--welcomeImg--width)));
+}
+
+.titleContainer button {
+    border: none;
+    background-color: var(--redtext);
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 0.5em;
+    width: 80px;
+    cursor: pointer;
+}
+
+
+/* welcome s */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 93.5185185185vh;
+    margin-top: 6.4814814815vh;
+}
+
+
+/* Welcome Animation */
+
+.titleContainer {
+    width: 350px;
+    overflow: hidden;
+}
+
+.titleContainer .text.secoundText {
+    position: relative;
+    color: var(--redtext);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.titleContainer .text.firstText {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.text.secoundText:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg);
+    border-left: 2px solid var(--white);
+    animation: animate 6s steps(15) infinite;
+}
+
+@keyframes animate {
+
+    40%,
+    60% {
+        left: calc(100% + 4px);
+    }
+
+    100% {
+        left: 0%;
+    }
+}

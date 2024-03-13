@@ -1,0 +1,59 @@
+/* loyaut */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --navbar-a: 25px;
+    --welcomeAnimation-span: 30px;
+    --sectionTitle-h1: 30px;
+    --welcomeBtn: 20px;
+    --textContainer: 30px;
+    --skillsName: 30px;
+    --bgGrid--Width: 70vw;
+    --bgGrid--height: 100vh;
+}
+
+:root {
+    --welcomeImg--width: 30vw;
+    --welcomeImg--height: 77.99922vh;
+}
+
+:root {
+    --white: #f7f7f7;
+    --bg: #272727;
+    --bg--Light: #3b3b3b;
+    --headerbg: #1f1f1f;
+    --redtext: #FF0000;
+}
+
+.bdGrid {
+    display: grid;
+    grid-template-columns: 100%;
+    max-width: var(--bgGrid--Width);
+    margin-left: 15vw;
+    margin-right: 15vw;
+    place-content: center;
+}
+
+
+.section-title {
+    position: relative;
+    font-size: var(--sectionTitle-h1);
+    color: var(--redtext);
+    text-align: center;
+    z-index: 1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100vw;
+}

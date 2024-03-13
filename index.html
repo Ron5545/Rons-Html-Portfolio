@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- WelcomeAnimation -->
+    <script src="./js/WelcomeTextAnimation.js" defer></script>
+
+    <!-- ContactModal -->
+    <script src="./js/contactModal.js" defer></script>
+
+    <!-- contactForm -->
+    <script src="./js/contactForm.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 defer"></script>
+
+    <!-- particles -->
+    <script src="./js/particles.js" defer></script>
+
+    <!-- Javascript -->
+    <script src="./js/app.js" defer></script>
+
+    <link rel="icon" href="./images/profile-image.png">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>rons portfolio</title>
+
+</head>
+
+<body>
+
+
+    <!-- intro -->
+    <div class="intro">
+        <h1 class="logo-header">
+            <span class="logo">W</span><span class="logo">e</span><span class="logo">l</span><span
+                class="logo">c</span><span class="logo">o</span><span class="logo">m</span><span class="logo">e</span>
+        </h1>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <!-- Header -->
+    <header class="headerSection" id="home">
+
+        <nav class="nav bdGrid">
+
+            <ul class="liList">
+                <li class="navItem"><a href="#home">Home</a></li>
+                <li class="navItem"><a href="#aboutMe">About</a></li>
+                <li class="navItem"><a href="#JSProjects    ">JSProjects</a></li>
+                <li class="navItem"><a href="#htmlProjects">htmlProjects</a></li>
+                <li class="navItem"><a id="btnFn" href="#">Contact</a></li>
+            </ul>
+
+            <div class="navLogo">
+
+                <div>
+                    <img class="nameLogo" src="./images/MyNameLogo.png" alt="" srcset="">
+                </div>
+
+                <div>
+                    <img class="picLogo" src="./images/profile-image.png" alt="" srcset="">
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- welcome -->
+    <section class="welcomeSection">
+
+        <div class="bdGrid welcomeContainer">
+
+            <div class="titleContainer">
+                <span class=" text firstText">Hello,
+                    <br>My Name Is Ron, <br>I'm a </span>
+                <span class="text secoundText">Web Designer</span><br>
+                <button id="btnFn2">Contact</button>
+            </div>
+
+
+            <div class="welcomeImage">
+                <img src="images/Ron1.jpg" alt="" srcset="">
+            </div>
+
+
+
+    </section>
+
+
+    <!-- ABOUT ME -->
+    <section class="aboutMeSection" id="aboutMe">
+
+
+        <div class="aboutMeConteiner bdGrid">
+
+            <div class="textContainer">
+
+                <div class="aboutmetext">
+
+                    <h2>Hello</h2>
+
+                    <p>Hello, i'm Ron, student of full stack developer from israel.
+                        I’ve found my passion in web design, create landing pages, create business pages, web
+                        development, I
+                        love spending time coding and
+                        encountering new challenges. I’m highly adaptable to new challenges and projects.</p>
+                </div>
+
+                <div class="mySkillsContainer">
+                    <h3>My programming languages:</h3>
+
+                    <div class="skills">
+
+
+                        <div class="firstContainerSkills">
+                            <div class="skillsName">
+                                <span>Html</span>
+                            </div>
+
+                            <div class="skillsName">
+                                <span>css</span>
+                            </div>
+
+                            <div class="skillsName">
+                                <span>JavaScript</span>
+                            </div>
+
+                        </div>
+
+                        <div class="secoundContainerSkills">
+
+                            <div class="skillsName">
+                                <span>React</span>
+                            </div>
+
+                            <div class="skillsName">
+                                <span>Pyton</span>
+                            </div>
+
+                            <div class="skillsName">
+                                <span>MongoDB</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="img-container">
+                <img src="./images/Ron.JPG" alt="">
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section class="projectsSection" id="Projects">
+
+        <div class="bdGrid">
+
+            <div class="section-title HtmlTitle">
+                <h1> Html Projects </h1>
+            </div>
+
+            <div class="containerHtmlCard">
+
+                <div class="card card1"><a href="/HtmlProjectPreview/ProjectNo1Preview.html" target="_blank">
+                        <img class="bg-image" src="./images/project1.png" alt="Avatar">
+                    </a></div>
+
+                <div class="card card2"><a href="/HtmlProjectPreview/project2welcome.html" target="_blank">
+                        <img class="bg-image" src="./images/project2.png" alt="Avatar">
+                    </a></div>
+
+                <div class="card card3"><a href="/HtmlProjectPreview/project3welcome.html" target="_blank"><img
+                            class="bg-image" src="./images/project3.png" alt="Avatar"></a>
+                </div>
+
+                <div class="card card4"><a href="/HtmlProjectPreview/project4welcome.html" target="_blank"><img
+                            class="bg-image" src="./images/project4.png" alt="Avatar">
+                    </a></div>
+
+                <div class="card card5"><a href="/HtmlProjectPreview/project5welcome.html" target="_blank">
+                        <img class="bg-image" src="./images/project5.png" alt="Avatar">
+                    </a></div>
+
+                <div class="card card6"><a href="/HtmlProjectPreview/project6welcome.html" target="_blank">
+                        <img class="bg-image" src="./images/project6.png" alt="Avatar">
+                    </a></div>
+
+                <div class="card card7"><a href="/HtmlProjectPreview/project7welcome.html" target="_blank"><img
+                            class="bg-image" src="./images/project7.png" alt="Avatar">
+                    </a></div>
+
+            </div>
+
+            <div class="section-title JavaScriptTitle">
+                <h1> Java Script Projects </h1>
+            </div>
+
+            <div class="containerJavaScriptCard">
+
+                <div class="card card1"><a href="/HtmlProjectPreview/ProjectNo1Preview.html" target="_blank">
+                        <img class="bg-image" src="./images/Calc.png" alt="Avatar">
+                    </a></div>
+
+                <div class="card card2"><a href="/HtmlProjectPreview/project2welcome.html" target="_blank">
+                        <img class="bg-image" src="./images/contactForm.png" alt="Avatar">
+                    </a></div>
+
+                <div class="card card3"><a href="/HtmlProjectPreview/project3welcome.html" target="_blank"><img
+                            class="bg-image" src="./images/countryApi.png" alt="Avatar"></a>
+                </div>
+
+                <div class="card card4"><a href="/HtmlProjectPreview/project4welcome.html" target="_blank"><img
+                            class="bg-image" src="./images/RockPaperScissors.png" alt="Avatar">
+                    </a></div>
+
+                <div class="card card5"><a href="/HtmlProjectPreview/project5welcome.html" target="_blank">
+                        <img class="bg-image" src="./images/ToDoList.png" alt="Avatar">
+                    </a></div>
+
+                <div class="card card6"><a href="/HtmlProjectPreview/project6welcome.html" target="_blank">
+                        <img class="bg-image" src="./images/weatherApi.png" alt="Avatar">
+                    </a></div>
+
+                <div class="card card7"><a href="/HtmlProjectPreview/project7welcome.html" target="_blank"><img
+                            class="bg-image" src="./images/Calc.png" alt="Avatar">
+                    </a></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Contact Ron</h2>
+            </div>
+
+            <div class="containerContact">
+
+                <div class="contactMe">
+
+                    <section class="contact">
+
+                        <form class="contactForm" id="contactForm">
+
+                            <div class="input-box">
+
+                                <div class="input-field field">
+                                    <input type="text" placeholder="Full Name" id="name" class="item"
+                                        autocomplete="off">
+                                    <div class="error-txt">Full Name Can't be blank</div>
+                                </div>
+
+                                <div class="input-field field">
+                                    <input type="text" placeholder="Email Address" id="email" class="item"
+                                        autocomplete="off">
+                                    <div class="error-txt email">Email Address can't be blank</div>
+                                </div>
+
+                            </div>
+
+                            <div class="input-box">
+
+                                <div class="input-field field">
+                                    <input type="text" placeholder="Phone Number" id="phone" class="item"
+                                        autocomplete="off">
+                                    <div class="error-txt">Phone Number can't be blank</div>
+                                </div>
+
+                                <div class="input-field field">
+                                    <input type="text" placeholder="Subject" id="subject" class="item"
+                                        autocomplete="off">
+                                    <div class="error-txt">Subject can't be blank</div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="textarea-field field">
+                                <textarea name="" id="message" cols="30" rows="10" placeholder="Your message"
+                                    class="item" autocomplete="off"></textarea>
+                                <div class="error-txt">Message can't be blank</div>
+                            </div>
+
+                            <div class="divBtnModal">
+                                <button type="submit">Send Message</button>
+                            </div>
+
+                        </form>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footerSection">
+        <div class="bdGrid" id="container-footer">
+            <p>All rights reserved</p>
+            <p>ron shulkin</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

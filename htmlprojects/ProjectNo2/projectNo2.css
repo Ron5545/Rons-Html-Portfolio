@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --headTextColor: #020253;
+    --bgc: #FFFFFF;
+    --formText: #2C2C2C;
+    --formBd: #020253;
+    --formBgc: #E5EEFF;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 57% 43%;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.image {
+    background-image: url(images/CoffeeSmall.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.container-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    grid-area: Text1;
+    width: 500px;
+    height: 600px;
+    text-align: right;
+    padding: 41px;
+}
+
+h1 {
+    color: var(--formBd);
+    font: normal normal 900 43px/63px Heebo;
+}
+
+p {
+    color: var(--formBd);
+    font: normal normal normal 20px/29px Heebo;
+    margin-top: 30px;
+}
+
+input {
+    width: 25rem;
+    height: 3rem;
+    background-color: var(--formBgc);
+    border: none;
+    border-bottom: 4px solid var(--formBd);
+}
+
+label {
+    display: block;
+    color: var(--formText);
+    margin-top: 10px;
+    font: normal normal 700 16px/24px Heebo;
+    text-align: right;
+}
+
+input[type=submit] {
+    width: 120pt;
+    margin-top: 20px;
+    background-color: var(--formBd);
+    color: var(--bgc);
+    font: normal normal bold 18pt/23pt Heebo;
+}
+
+
+
+@media (max-width: 400px) {
+    .image {
+        background-image: url(images/Coffee370x219.png);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        height: 33.33333333333333vh;
+    }
+
+
+    .container {
+        height: 66.9vh;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .container-content {
+        width: 100vw;
+        display: block;
+        height: auto;
+    }
+
+
+    .card {
+        width: 100vw;
+        height: auto;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .form {
+        width: 80vw;
+        height: auto;
+    }
+
+    input {
+        width: 70vw;
+        margin-left: 10vw;
+    }
+
+    input[type=submit] {
+        width: 70vw;
+    }
+
+
+    p {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-content {
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        font-size: 15px;
+        margin-top: 0;
+        padding: 0;
+    }
+}

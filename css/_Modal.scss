@@ -1,0 +1,278 @@
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 200px;
+    /* Location of the box */
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: visible;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+::placeholder {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #1f242d;
+    margin: 0 auto;
+    padding: 0;
+    width: 600px;
+    height: 600px;
+    gap: 1vh;
+    place-content: initial;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    display: flex;
+    flex-direction: column;
+}
+
+div.modal-header {
+    background-color: #1f242d;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 0 15px;
+}
+
+.containerContact {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    height: 550%;
+    max-width: 100%;
+}
+
+div.contactMe {
+    height: 100%;
+}
+
+section.contact {
+    height: 100%;
+}
+
+form.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm {
+    width: 100%;
+    height: 100%;
+    place-content: center;
+}
+
+.contactForm .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box .input-field {
+    width: 48.5%;
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ededed;
+    margin: 12px 0;
+}
+
+.field.error .item {
+    border-color: #d93025;
+}
+
+.field.item::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+
+.field .error-txt {
+    font-size: 12px;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .error-txt {
+    display: block;
+}
+
+.contactForm .textarea-field .item {
+    resize: none;
+}
+
+.contactForm .textarea-field .error-txt {
+    margin-top: -10px;
+}
+
+.divBtnModal {
+    display: grid;
+    place-content: center;
+}
+
+.contactForm button {
+    width: 100%;
+    padding: 12px 32px;
+    background: #0ef;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0ef;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    margin: 2px 15px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    margin: 2px 15px;
+    cursor: pointer;
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.contactForm button:hover {
+    box-shadow: none;
+}
+
+@media (max-width: 1200px) {
+
+    .input-box .input-field {
+        width: 48.5%;
+    }
+
+    .modal {
+        padding-top: 10vh;
+    }
+
+    .modal-content {
+        width: 600px;
+        height: 600px;
+    }
+
+    .contactForm {
+        place-content: center;
+    }
+
+}
+
+@media (max-width: 620px) {
+
+    .field .error-txt {
+        font-size: 8px;
+        margin: -5px 0 10px;
+        display: none;
+    }
+
+    div.modal-header {
+        font-size: 1em;
+        margin-top: 15px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .field .item {
+        width: 100%;
+        padding: 10px;
+        margin-left: 20px;
+    }
+
+    div.input-box {
+        height: 60px;
+        width: 360px;
+    }
+
+    textarea#message.item {
+        width: 360px;
+        height: 130px;
+    }
+
+    .modal {
+        padding-top: 200px;
+    }
+
+    .field .item {
+        margin-left: 0;
+    }
+
+    .contactForm {
+        width: 340px;
+        height: 340px;
+    }
+
+    .modal-content {
+        width: 400px;
+        height: 400px;
+    }
+
+    section.contact {}
+
+}
