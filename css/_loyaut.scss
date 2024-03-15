@@ -33,6 +33,7 @@
 }
 
 .bdGrid {
+    overflow: hidden;
     display: grid;
     grid-template-columns: 100%;
     max-width: var(--bgGrid--Width);
