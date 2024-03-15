@@ -134,10 +134,10 @@ ul.navList {
     text-align: center;
 }
 
-.navList div.liList li.navItem:last-child {
+/* .navList div.liList li.navItem:last-child {
     margin: 0 1rem 0 1rem;
     padding: 0;
-}
+} */
 
 
 #btnContainer {
@@ -183,6 +183,11 @@ div#project img {
     height: auto;
 }
 
+.containerTech img {
+    width: 100px;
+    height: auto;
+}
+
 @media (max-width: 1000px) {
 
 
@@ -205,6 +210,11 @@ div#project img {
         font-size: 1rem;
     }
 
+    .containerTech img {
+        width: 80px;
+        height: auto;
+    }
+
 }
 
 @media screen and (max-width: 570px) {
@@ -220,6 +230,11 @@ div#project img {
         font-size: 1rem;
     }
 
+    .containerTech img {
+        width: 60px;
+        height: auto;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -233,6 +248,45 @@ div#project img {
     div a,
     p {
         font-size: 0.85rem;
+    }
+
+    div h1 {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    .bd-grid {
+        max-width: 100vw;
+        margin: 0;
+        place-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .liList li,
+    div #nameSpan {
+        padding: 0;
+        margin: 0 0.2rem;
+    }
+
+    div a,
+    p {
+        font-size: 0.60rem;
+    }
+
+    div h1 {
+        font-size: 2.5rem;
+    }
+
+    .containerTech img {
+        width: 35px;
+        height: auto;
     }
 
 }
