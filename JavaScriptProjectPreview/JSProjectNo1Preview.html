@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project</title>
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/image/img-JS.png">
+    <title>JavaScript Project</title>
 
     <style>
         * {
@@ -16,19 +15,16 @@
         }
 
         :root {
-            /* colors */
-
             --black: linear-gradient(90deg, rgb(43, 38, 38) 0%, #626262 100%);
             --blacktext: linear-gradient(90deg, rgb(15, 14, 14) 0%, #221919 100%);
             --grey: #626262;
             --redGradient: linear-gradient(90deg, rgb(204, 32, 32) 0%, orange 100%);
             --red: rgb(204, 32, 32);
             --white: #fff;
-
         }
 
         .bd-grid {
-            max-width: 75vw;
+            max-width: 80vw;
             display: grid;
             grid-template-columns: 100%;
             column-gap: 2rem;
@@ -111,12 +107,19 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            text-align: center;
         }
 
         .navLogo {
             display: flex;
             flex-direction: row;
             justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        #nameSpan {
+            display: flex;
             align-items: center;
         }
 
@@ -145,12 +148,6 @@
             text-align: center;
         }
 
-        /*         .navList div.liList li.navItem:last-child {
-            margin: 0 1rem 0 1rem;
-            padding: 0;
-        } */
-
-
         #btnContainer {
             display: flex;
             flex-direction: row;
@@ -177,7 +174,6 @@
             padding: 1rem 0;
         }
 
-
         .buttomNavBar {
             display: flex;
             flex-direction: row;
@@ -189,18 +185,12 @@
             padding: 0 1rem;
         }
 
-        div#project img {
-            width: 100%;
-            height: auto;
-        }
-
         .containerTech img {
             width: 100px;
             height: auto;
         }
 
         @media (max-width: 1040px) {
-
 
             .liList li,
             div #nameSpan {
@@ -223,6 +213,11 @@
 
             .containerTech img {
                 width: 80px;
+                height: auto;
+            }
+
+            div#project img {
+                width: 90vw;
                 height: auto;
             }
 
