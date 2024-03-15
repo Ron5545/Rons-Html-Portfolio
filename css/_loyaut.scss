@@ -32,16 +32,22 @@
     --redtext: #FF0000;
 }
 
-.bdGrid {
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 100%;
-    max-width: var(--bgGrid--Width);
-    margin-left: 15vw;
-    margin-right: 15vw;
-    place-content: center;
+:root {
+    --black: linear-gradient(90deg, rgb(43, 38, 38) 0%, #626262 100%);
+    --blacktext: linear-gradient(90deg, rgb(15, 14, 14) 0%, #221919 100%);
+    --grey: #626262;
+    --redGradient: linear-gradient(90deg, rgb(204, 32, 32) 0%, orange 100%);
+    --red: rgb(204, 32, 32);
+    --white: #fff;
 }
 
+.bd-grid {
+    max-width: 80vw;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    margin: 0 10vw;
+}
 
 .section-title {
     position: relative;

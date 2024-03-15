@@ -1,51 +1,152 @@
-/* nav bar Header */
-
-.nav {
-    display: flex;
-    direction: rtl;
-    justify-content: space-between;
-    height: 6.481481481481481vh;
+:root {
+    --black: linear-gradient(90deg, rgb(43, 38, 38) 0%, #626262 100%);
+    --blacktext: linear-gradient(90deg, rgb(15, 14, 14) 0%, #221919 100%);
+    --grey: #626262;
+    --redGradient: linear-gradient(90deg, rgb(204, 32, 32) 0%, orange 100%);
+    --red: rgb(204, 32, 32);
+    --white: #fff;
 }
 
-.headerSection {
-    background-color: var(--white);
-    background-color: var(--headerbg);
-    z-index: 100;
+.header {
+    font-family: cursive;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    background-color: var(--grey);
+    z-index: 1;
+}
+
+
+
+
+#nameSpan {
+    margin: 0 2rem;
+}
+
+div a {
+    background-image: var(--redGradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .2s;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+div a {
+    background-image: var(--redGradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .2s;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+li.navItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+ul.navList {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 .navLogo {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-.navLogo div {
-    place-content: center;
-    align-self: center;
+#nameSpan {
+    display: flex;
+    align-items: center;
+}
+
+#nameSpan,
+#picLogo {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--blacktext);
+    height: 100%;
 }
 
 .liList {
     display: flex;
-    justify-content: space-evenly;
-    direction: ltr;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
-a {
-    text-decoration: none;
-    font: normal normal 900 37px Heebo;
-    font-size: var(--navbar-a);
-    font-weight: 700;
-    letter-spacing: 0px;
-    color: var(--white);
-    opacity: 1;
-    margin-top: 3.452243958573072vh;
-    margin-left: 0.78125vw;
-    margin-right: 0.78125vw;
+.liList li {
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 
-.nav ul {
-    height: 6.481481481481481vh;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+
+@media (max-width: 1040px) {
+
+    .liList li,
+    div #nameSpan {
+        padding: 0;
+        margin: 0 1rem;
+    }
+
+    #picLogo {
+        display: none;
+    }
+
+    div a {
+        font-size: 1.6rem;
+    }
+
+}
+
+@media (max-width: 730px) {
+
+    div a {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .liList li,
+    div #nameSpan {
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+
+    div a {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .liList li,
+    div #nameSpan {
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+
+    div a {
+        font-size: 0.85rem;
+    }
+
+
 }

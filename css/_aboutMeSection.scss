@@ -3,12 +3,9 @@
 .aboutMeSection {
     background-color: var(--bg--Light);
     height: var(--bgGrid--height);
-    place-content: center;
 }
 
 .aboutMeConteiner {
-    display: grid;
-    grid-template-rows: 1, 100%;
     width: var(--bgGrid--Width);
     grid-template-columns: repeat(2, 50%);
     direction: rtl;
@@ -18,7 +15,6 @@
     display: inline-block;
     width: var(--welcomeImg--width);
     height: var(--welcomeImg--height);
-    margin: 0 auto;
     margin-right: calc((var(--bgGrid--Width)/2) - (var(--welcomeImg--width)));
 }
 

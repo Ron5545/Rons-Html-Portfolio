@@ -18,9 +18,6 @@
         margin-right: 15vw;
     }
 
-    .welcomeSection {
-        height: calc(((var(--bgGrid--height)) - (6.4814814815vh)));
-    }
 
     .welcomeContainer {
         display: flex;
@@ -34,10 +31,9 @@
         padding: 0;
     }
 
-
-
     .aboutMeConteiner {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         text-align: center;
         gap: 0;
@@ -184,24 +180,10 @@
         margin: 0;
     }
 
-    .card {
-        margin: 0 1vh;
-        width: 250px;
-        height: 200px;
-    }
-
-    .card img {
-        width: 250px;
-    }
-
     .card a img {
         width: 250px;
         height: 180px;
-    }
-
-    .containerHtmlCard {
-        height: 200px;
-        width: 300px;
+        margin: 0 5px;
     }
 
     #nameLogo {
