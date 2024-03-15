@@ -481,10 +481,6 @@ body::-webkit-scrollbar-thumb {
     width: 50px;
     height: 30px;
   }
-  .scroller[data-speed=fast] {
-    width: 66vw;
-    --_animation-duration: 15s;
-  }
   .section-title {
     font-size: small;
   }
@@ -505,10 +501,6 @@ body::-webkit-scrollbar-thumb {
   .nav a {
     font-size: 14px;
   }
-  /*     .nameLogo {
-      width: 80px;
-      height: 30px;
-  } */
   .picLogo,
   .nameLogo {
     position: absolute;
@@ -550,15 +542,11 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media (max-width: 550px) {
+  .JavaScriptTitle {
+    margin: 0;
+  }
   #nameLogo {
     visibility: hidden;
-  }
-}
-@media (max-width: 550px) {
-  @keyframes scroll {
-    to {
-      transform: translate(calc(-412% - 1rem));
-    }
   }
 }
 /* The Modal */
