@@ -3,22 +3,31 @@
     margin: 0
 }
 
-.bodyCalculator {
-    margin: 0 auto;
+body {
+    margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
     background-color: hsl(0, 0%, 95%);
 }
 
+.calcContainer {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: hsl(0, 0%, 95%);
+}
+
 #calculator {
+    padding: 20px;
     font-family: Arial, sans-serif;
     background-color: hsl(0, 0%, 15%);
     border-radius: 15px;
-    max-width: 500px;
+    width: 500px;
     overflow: auto;
-    padding: 20px;
 }
 
 #display {
