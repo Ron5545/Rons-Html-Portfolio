@@ -4,6 +4,7 @@
 
     body {
         font-family: Heebo;
+        max-width: 100vw;
     }
 
     * {
@@ -35,7 +36,7 @@
     /* header */
 
     .headerContainer {
-        width: 100vw;
+        width: 100%;
         height: 28.55855855855856vh;
         background-color: var(--main-blue);
     }
@@ -248,7 +249,7 @@
 
 
     .hr {
-        width: 100vw;
+        width: 100%;
         height: 18.53px;
         background-color: var(--main-blue);
         margin-top: 70.5px;
