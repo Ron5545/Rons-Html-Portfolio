@@ -8,7 +8,12 @@
 
 body {
     font-family: 'Shadows Into Light', cursive;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to bottom, black, gray, white);
 }
 
 :root {
@@ -36,7 +41,7 @@ body {
     height: var(--todo-height);
     border: none;
     width: 100%;
-    background-color: grey;
+    background-color: white;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     outline: none;
@@ -46,7 +51,7 @@ body {
 
 
 .to-do-input button {
-    background-color: grey;
+    background-color: white;
     width: var(--todo-button-width);
     height: var(--todo-height);
     position: absolute;
@@ -56,7 +61,9 @@ body {
     border-bottom-right-radius: 10px;
 }
 
-
+h1 {
+    color: white;
+}
 
 .item {
     gap: 15px;
@@ -66,6 +73,7 @@ body {
     display: flex;
     margin-left: 50px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .input-controller textarea {
@@ -74,7 +82,7 @@ body {
     resize: none;
     transition: all 0.30s ease-in-out;
     display: absolute;
-    background-color: grey;
+    background-color: white;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     width: var(--todo-input);
@@ -90,7 +98,7 @@ body {
     border-bottom-right-radius: 10px;
     width: var(--todo-button-width);
     height: var(--todo-height);
-    background-color: grey;
+    background-color: white;
 }
 
 .update-controller {

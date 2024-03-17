@@ -10,145 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <style>
-        :root {
-            --headTextColor: #020253;
-            --bgc: #FFFFFF;
-            --formText: #2C2C2C;
-            --formBd: #020253;
-            --formBgc: #E5EEFF;
-        }
-
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Heebo', sans-serif;
-        }
-
-        .container {
-            background-color: var(--bgc);
-            width: 100vw;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 20px;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-
-        .aside {
-            max-width: 835px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .card {
-            width: 500px;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            direction: rtl;
-        }
-
-        h1 {
-            color: var(--headTextColor);
-            font-weight: 900;
-            font-size: 32px;
-            line-height: 53px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            color: var(--formText);
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 24px;
-            margin-top: 10px;
-        }
-
-        input {
-            width: 100%;
-            padding: 10px;
-            border: none;
-            border-bottom: 4px solid var(--formBd);
-            background-color: var(--formBgc);
-            color: var(--formText);
-            font-family: 'Heebo', sans-serif;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 24px;
-            margin-top: 10px;
-        }
-
-        label {
-            display: block;
-            margin-top: 10px;
-        }
-
-        input[type=submit] {
-            width: 100%;
-            padding: 10px;
-            background-color: var(--formBd);
-            color: var(--bgc);
-            font-weight: 700;
-            font-size: 22px;
-            line-height: 30px;
-            cursor: pointer;
-        }
-
-        @media (max-width: 1500px) {
-            .container {
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(2, 1fr);
-            }
-
-            .aside {
-                width: 100%;
-                padding: 20px;
-            }
-
-            .card {
-                width: calc(100% - 40px);
-                padding: 30px 20px;
-            }
-
-            form {
-                width: 100%;
-            }
-
-            input[type=submit] {
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 767.98px) {
-            .container {
-                margin: 0;
-                padding: 0;
-            }
-
-            h1 {
-                font-size: 24px;
-                margin-bottom: 15px;
-            }
-
-            p {
-                font-size: 14px;
-                margin-top: 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -157,17 +19,17 @@
         <div class="aside">
             <div class="card">
                 <h1>
-                    קפה טוב לבוקר טוב
+                    Get coffee for better day
                 </h1>
                 <p>
-                    לקבלת קופון לקפה חינם ומפנק שיפתח לכם את היום בחיוך, יש למלא את הפרטים
-                </p>
+                    To receive a coupon for a free and indulgent coffee that will start your day with a smile, fill in
+                    the details below</p>
                 <form action="">
-                    <label for="FirstName">שם</label>
-                    <input type="text" id="FirstName" required><br>
-                    <label for="LastName">דואר אלקרוני</label>
-                    <input type="text" id="LastName" required><br>
-                    <input type="submit" value="Send">
+                    <label for="FirstName">Name</label>
+                    <input type="text" id="Name" required><br>
+                    <label for="LastName">Email</label>
+                    <input type="text" id="Email" required><br>
+                    <input type="submit" value="submit">
                 </form>
             </div>
         </div>

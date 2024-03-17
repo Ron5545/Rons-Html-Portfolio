@@ -89,7 +89,7 @@ img {
 
 #fillingSection label {
     color: #0EE1DA;
-    direction: rtl;
+    direction: ltr;
     font-size: smaller;
     display: block;
 }

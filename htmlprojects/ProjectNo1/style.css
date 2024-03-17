@@ -1,139 +1,144 @@
- :root {
-     --headTextColor: #FFFFFF;
-     --bgcFirst: #281EFF;
-     --bgcSecond: #2DFF8C;
-     --pTextColor: #F9F9F9;
-     --formBd: #FFFFFF;
-     --formBgc: #F6F6F624;
-     --bText: #1C1C1C;
- }
+:root {
+    --headTextColor: #FFFFFF;
+    --bgcFirst: #281EFF;
+    --bgcSecond: #2DFF8C;
+    --pTextColor: #F9F9F9;
+    --formBd: #FFFFFF;
+    --formBgc: #F6F6F624;
+    --bText: #1C1C1C;
+}
 
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
- .container {
-     width: 100vw;
-     height: 100vh;
-     background: transparent linear-gradient(180deg, var(--bgcFirst) 0%, var(--bgcSecond) 100%) 0% 0% no-repeat padding-box;
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: transparent linear-gradient(180deg, var(--bgcFirst) 0%, var(--bgcSecond) 100%) 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
- .card {
-     width: 1200px;
-     height: 407px;
- }
+.card {
+    width: 1100px;
+    height: 407px;
+}
 
- h1,
- h2,
- p,
- form {
-     color: var(--headTextColor);
- }
+h1,
+h2,
+p,
+form {
+    color: var(--headTextColor);
+}
 
- h1,
- h2,
- p {
-     text-align: center;
- }
+h1,
+h2,
+p {
+    text-align: center;
+}
 
- h2,
- p,
- form {
-     font-family: 'Satisfy', cursive;
-     font-family: 'Varela Round', sans-serif;
- }
+h2,
+p,
+form {
+    font-family: 'Satisfy', cursive;
+    font-family: 'Varela Round', sans-serif;
+}
 
- h1 {
-     font-family: 'Satisfy', cursive;
-     font: normal normal normal 160/231px Satisfy;
-     font-size: 120pt;
-     text-shadow: 0px 0px 36px #00000087;
- }
+h1 {
+    font-family: 'Satisfy', cursive;
+    font: normal normal normal 160/231px Satisfy;
+    font-size: 120pt;
+    text-shadow: 0px 0px 36px #00000087;
+}
 
- h2 {
-     font-size: 24pt;
- }
+h2 {
+    font-size: 24pt;
+}
 
- p {
-     font-size: 12pt;
-     margin-top: 20px;
- }
+p {
+    font-size: 12pt;
+    margin-top: 20px;
+}
 
- form {
-     padding-top: 30px;
-     display: flex;
-     direction: rtl;
-     justify-content: space-evenly;
-     align-items: end;
- }
+form {
+    padding-top: 30px;
+    display: flex;
+    direction: ltr;
+    justify-content: space-evenly;
+    align-items: end;
+}
 
- .form-control {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: flex-start;
- }
+.form-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
+}
 
- input {
-     height: 38pt;
-     background: var(--formBgc);
-     border: 1px solid var(--formBd);
-     width: 440px;
-     margin-left: 15px;
- }
+input {
+    height: 38pt;
+    background: var(--formBgc);
+    border: 1px solid var(--formBd);
+    width: 440px;
+}
 
- input[type=submit] {
-     width: 155px;
-     height: 38pt;
-     background-color: var(--headTextColor);
-     color: var(--bText);
-     font-size: 15pt;
-     border: none;
-     border-radius: 4px;
-     cursor: pointer;
- }
+input[type=submit] {
+    width: 155px;
+    height: 38pt;
+    background-color: var(--headTextColor);
+    color: var(--bText);
+    font-size: 15pt;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
- @media (max-width: 1000px) {
-     .card {
-         width: 600px;
-         padding: 20px;
-     }
+@media (max-width: 1000px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+    }
 
-     h1 {
-         font-size: 45pt;
-     }
+    h1 {
+        font-size: 45pt;
+    }
 
 
-     h2 {
-         font-size: 13.5pt;
-         margin: 20px;
-     }
+    h2 {
+        font-size: 13.5pt;
+        margin: 20px;
+    }
 
-     form {
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-     }
+    form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-     input {
-         max-width: 550px;
-         width: 90vw;
-     }
+    input {
+        max-width: 550px;
+        width: 90vw;
+    }
 
-     input[type=submit] {
-         max-width: 550px;
-         width: 90vw;
-         margin-top: 20px;
-     }
+    input[type=submit] {
+        max-width: 550px;
+        width: 90vw;
+        margin-top: 20px;
+    }
 
-     @media (max-width: 575.98px) {
-         .card {
-             width: 100vw;
-         }
-     }
- }
+    @media (max-width: 575.98px) {
+        .card {
+            width: 100vw;
+        }
+    }
+}
